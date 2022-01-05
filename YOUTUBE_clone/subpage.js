@@ -25,3 +25,8 @@ newArr.map((ele) => {
     des.append(channel,tital,more);
     
 })
+
+
+function back(){
+    window.location.href="mainpage.html"
+}

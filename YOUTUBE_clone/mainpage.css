@@ -1,70 +1,143 @@
+/* body{
+    background-color: black;
+    color: white;
+} */
 .outer {
-    display: flex;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    cursor: pointer;
+   overflow: hidden;
+   border: 1px solid black;
+ 
+   cursor: pointer;
 }
 .outer:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .des{
-    margin-left: 10px;
-    overflow: hidden;
-    margin-right: 10px;
+   margin-left: 10px;
+   overflow: hidden;
+   margin-right: 10px;
 
 
 }
 
-.img{
-    height: 99%;
-    width: 40%;
+.imgposter{
+   height: 40%;
+   width: 100%;
+   
 }
 
 .navbar {
-    width: 100%;
-    border: 2px solid black;
-    
-    height: 60px;
-    margin-bottom: 10px;
+   width: 100%;
+   /* border: 2px solid black; */
+   background-color: white;
+   height: 60px;
+   margin-bottom: 10px;
+   position: fixed;
+   right: 0;
+   top: 0;
+   left: 0;
+   z-index: 1030;
+   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 }
 
 .mainbox {
-
-    margin-left: 30%;
-    margin-top: -50px;
-    margin-bottom: 10px;
+    display: flex;
+   margin-left: 30%;
+   margin-top: -50px;
+   margin-bottom: 10px;
 
 }
 
 .imgLogo{
-    margin-left: 40px;
+   margin-left: 40px;
 
 }
 
 button{
-    background-color: transparent;
-    border: none;
-    border: 2px solid black;
-    height: 30px;
-    cursor: pointer;
-    font-weight: 600;
-    
+   background-color: transparent;
+   border: none;
+   border: 2px solid black;
+
+   height: 31px;
+   cursor: pointer;
+   font-weight: 600;
+   
 }
 
 button:hover{
-     background-color:black;
-     color: white;
+    background-color:black;
+    color: white;
 }
 
 input{
-    border: 2px solid black;
-    height: 25px;
-    width: 40%;
+   border: 2px solid black;
+   height: 25px;
+   width: 40%;
 }
 
 #display{
-    width: 70%;
-    margin: auto;
+   width: 100%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(5,20%);
+   grid-gap: 10px;
+  margin-top: 80px;
+}
+.night{
+   margin-left: 80px;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+      #display{
+         grid-template-columns: repeat(3,32%);
+
+      }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+      
+   #display{
+
+        display:block;
+
+   }
+   .outer{
+      
+      display: flex;
+      margin-bottom: 10px;
+      height: 200px;
+
+
+   }
+   .imgposter{
+
+      width: 40%;
+      height: 100%;
+    
+
+   }
+
+   .imgLogo{
+      width:25%;
+      margin-left: 10px;
+   }
+
+
+   .mainbox{
+      margin-left: 40%;
+   }
+
+   input{
+      width: 70px;
+   }
+
+   .night{
+      margin-left:10%;
+   }
+
 }
