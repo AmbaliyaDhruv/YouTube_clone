@@ -91,7 +91,7 @@ input{
 }
 
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 812px) {
       #display{
          grid-template-columns: repeat(3,32%);
 
@@ -99,7 +99,7 @@ input{
 
 }
 
-@media only screen and (min-width: 0px) and (max-width: 375px) {
+@media screen and (min-width: 0px) and (max-width: 375px) {
       
    #display{
 
