@@ -28,5 +28,5 @@ newArr.map((ele) => {
 
 
 function back(){
-    window.location.href="mainpage.html"
+    window.location.href="index.html"
 }
