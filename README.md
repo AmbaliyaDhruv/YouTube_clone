@@ -2,10 +2,10 @@
 Min Youtube-clone website made by using JavaScript and HTML-CSS.
 
 # Features
-1.Responsive webpage
-2.Dark and Light Mode
-3.Integrated search bar
-4.Individual video opening page
+1. Responsive webpage
+2. Dark and Light Mode
+3. Integrated search bar
+4. Individual video opening page
 
 # Screenshots of the app
 ## Landing Page
